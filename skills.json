@@ -1,0 +1,167 @@
+{
+  "$schema": "./docs/skills.schema.json",
+  "version": 1,
+  "tool": {
+    "name": "gflow-cli",
+    "install": "npm install -g @swissmarley/gflow-cli",
+    "description": "CLI automation for Google Flow (image/video generation)."
+  },
+  "skills": [
+    {
+      "name": "character-pipeline",
+      "version": "1.0.0",
+      "foundation": true,
+      "description": "Create consistent, reusable characters with defined visual identity, personality and voice.",
+      "tags": ["foundation", "character", "identity"],
+      "commands": [{ "file": "commands/character.md", "slash": "character" }],
+      "triggers": [
+        { "phrase": "create a character", "kind": "activation" },
+        { "phrase": "character design", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "brand-identity",
+      "version": "1.0.0",
+      "foundation": true,
+      "description": "Establish a complete brand visual system and configure a Flow project for consistent downstream generation.",
+      "tags": ["foundation", "brand", "identity"],
+      "commands": [{ "file": "commands/brand.md", "slash": "brand" }],
+      "triggers": [
+        { "phrase": "brand identity", "kind": "activation" },
+        { "phrase": "brand system", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "immersive-web",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity", "character-pipeline"],
+      "description": "Build cinematic, scroll-driven websites with AI-generated imagery and video loops.",
+      "tags": ["web", "3d", "scroll", "motion"],
+      "commands": [{ "file": "commands/immersive.md", "slash": "immersive" }],
+      "triggers": [
+        { "phrase": "immersive website", "kind": "activation" },
+        { "phrase": "scroll-driven site", "kind": "activation" },
+        { "phrase": "3d parallax website", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "motion-graphics",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity"],
+      "description": "Create seamless video loops, animated backgrounds, and title sequences.",
+      "tags": ["motion", "video", "loops"],
+      "commands": [{ "file": "commands/motion.md", "slash": "motion" }],
+      "triggers": [
+        { "phrase": "motion graphics", "kind": "activation" },
+        { "phrase": "video loop", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "cinema-production",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity", "character-pipeline"],
+      "description": "Full short film pipeline from storyboard to assembled clips.",
+      "tags": ["video", "film", "storyboard"],
+      "commands": [{ "file": "commands/cinema.md", "slash": "cinema" }],
+      "triggers": [
+        { "phrase": "short film", "kind": "activation" },
+        { "phrase": "cinema production", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "product-visuals",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity"],
+      "description": "Studio-quality product photography and commercial imagery.",
+      "tags": ["product", "photography", "ecommerce"],
+      "commands": [{ "file": "commands/product.md", "slash": "product" }],
+      "triggers": [
+        { "phrase": "product photography", "kind": "activation" },
+        { "phrase": "product visuals", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "design-docs",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity"],
+      "description": "Pitch decks, mood boards, and creative briefs with embedded AI visuals.",
+      "tags": ["document", "deck", "moodboard"],
+      "commands": [{ "file": "commands/designdoc.md", "slash": "designdoc" }],
+      "triggers": [
+        { "phrase": "pitch deck", "kind": "activation" },
+        { "phrase": "mood board", "kind": "activation" },
+        { "phrase": "design document", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "social-content",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity", "character-pipeline"],
+      "description": "Platform-optimized social posts, reels, and thumbnails in batch.",
+      "tags": ["social", "content", "batch"],
+      "commands": [{ "file": "commands/social.md", "slash": "social" }],
+      "triggers": [
+        { "phrase": "social media content", "kind": "activation" },
+        { "phrase": "social posts", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "editorial-design",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity"],
+      "description": "Article illustrations, cover art, photo essays, and visual narratives.",
+      "tags": ["editorial", "magazine", "illustration"],
+      "commands": [{ "file": "commands/editorial.md", "slash": "editorial" }],
+      "triggers": [
+        { "phrase": "editorial design", "kind": "activation" },
+        { "phrase": "magazine layout", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "architectural-viz",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity"],
+      "description": "Photorealistic architectural renders, walkthrough videos, and real estate marketing.",
+      "tags": ["architecture", "render", "realestate"],
+      "commands": [{ "file": "commands/archviz.md", "slash": "archviz" }],
+      "triggers": [
+        { "phrase": "architectural visualization", "kind": "activation" },
+        { "phrase": "architecture render", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "game-assets",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity", "character-pipeline"],
+      "description": "Concept art, environment painting, character design, and cutscene video for games.",
+      "tags": ["game", "concept-art", "assets"],
+      "commands": [{ "file": "commands/gameart.md", "slash": "gameart" }],
+      "triggers": [
+        { "phrase": "game assets", "kind": "activation" },
+        { "phrase": "concept art", "kind": "activation" }
+      ]
+    },
+    {
+      "name": "music-video",
+      "version": "1.0.0",
+      "foundation": false,
+      "consumes": ["brand-identity", "character-pipeline"],
+      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos.",
+      "tags": ["music", "video", "narrative"],
+      "commands": [{ "file": "commands/musicvideo.md", "slash": "musicvideo" }],
+      "triggers": [
+        { "phrase": "music video", "kind": "activation" },
+        { "phrase": "lyric video", "kind": "activation" }
+      ]
+    }
+  ]
+}
