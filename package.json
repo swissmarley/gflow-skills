@@ -1,0 +1,32 @@
+{
+  "name": "gflow-skills",
+  "version": "1.0.0",
+  "description": "A collection of agent skills for producing professional creative content with Google Flow via gflow-cli.",
+  "type": "module",
+  "bin": {
+    "gflow-skills": "bin/gflow-skills.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node lib/registry.js --validate"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "skills/",
+    "references/",
+    "installers/",
+    "install.sh",
+    "skills.json"
+  ],
+  "keywords": ["google-flow", "gflow", "ai", "skills", "claude", "codex", "design", "creative"],
+  "author": "swissmarley",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swissmarley/gflow-skills.git"
+  }
+}
