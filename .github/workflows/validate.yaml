@@ -1,0 +1,24 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate registry
+        run: node lib/registry.js --validate
+      - name: Check manifests are in sync with skills.json
+        run: |
+          node scripts/gen-manifests.js
+          git diff --exit-code .claude-plugin .codex-plugin .cursor-plugin \
+            || (echo "Manifests out of sync with skills.json. Run: node scripts/gen-manifests.js" && exit 1)
+      - name: Run tests
+        run: node --test
