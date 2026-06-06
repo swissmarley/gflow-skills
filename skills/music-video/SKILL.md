@@ -1,0 +1,42 @@
+---
+name: music-video
+description: Build visual narratives for music with performance scenes, abstract visuals, story-driven sequences, and lyric imagery, produced as shot-by-shot clips to edit together. Use when the user wants a music video, lyric video, performance visuals, or abstract music visuals.
+type: flexible
+version: 1.0.0
+foundation: false
+consumes: [brand-identity, character-pipeline]
+tools: [gflow-cli]
+---
+
+# Music Video
+
+Builds visual narratives for music (performance scenes, abstract visuals, story-driven sequences, lyric video imagery) as shot-by-shot clips to edit together.
+
+Read `references/quality-gate.md` (mandatory, motion and anti-slop rules) before building.
+
+## When to Use
+Music videos, lyric videos, performance visuals, abstract music visuals.
+
+## Workflow
+
+1. **Music brief** - capture genre, tempo and BPM, mood arc, lyric themes, and visual references.
+2. **Verify session** - run `gflow doctor`.
+3. **Structure breakdown** - map song sections (verse, chorus, bridge) to visual treatments.
+4. **Performer character** - `gflow character create` if the video is narrative.
+5. **Key-frame stills** - `gflow image` per section.
+6. **Approval gate** - the user approves the visual direction per section.
+7. **Per-section clips** - `gflow video --duration <matched to section length>`.
+8. **Transitions** - bridge sections with `gflow video --start-frame <a> --end-frame <b>`.
+9. **Batch render** - render the full video via `gflow batch <file.yaml>`.
+10. **Deliver** - numbered clips mapped to timestamps plus an edit guide.
+
+## Domain Quality Checks
+- Shot pacing mapped to musical structure.
+- Mood escalation that builds with musical energy.
+- Color storytelling: palette shifts between sections.
+- Performer consistency via Flow characters.
+- Every visual motivated by lyrical or musical content, no random abstract defaults.
+- Aspect ratio 16:9 or 9:16.
+
+## Inheriting characters and brand
+Inherit the performer via `--character <name>` (from character-pipeline) and the look via `--project <brand>` (from brand-identity) so the performer and palette stay consistent across every clip.
