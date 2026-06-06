@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/logo.svg" alt="gflow" width="460">
-
 <img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/banner.svg" alt="gflow-skills - creative production skills for coding agents" width="760">
 
 <h1>gflow-skills</h1>
@@ -217,3 +215,7 @@ gflow-skills is an independent, unofficial project. It is not affiliated with or
 ## License
 
 [MIT](LICENSE) © swissmarley
+
+<p align=center>
+  <img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/logo.svg" alt="gflow" width="460">
+</p>
