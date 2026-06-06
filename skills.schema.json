@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "gflow-skills registry",
+  "type": "object",
+  "required": ["version", "skills"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "integer" },
+    "tool": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "install": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "version", "description"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "version": { "type": "string" },
+          "foundation": { "type": "boolean" },
+          "consumes": { "type": "array", "items": { "type": "string" } },
+          "description": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["file", "slash"],
+              "properties": {
+                "file": { "type": "string" },
+                "slash": { "type": "string" }
+              }
+            }
+          },
+          "triggers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["phrase"],
+              "properties": {
+                "phrase": { "type": "string" },
+                "kind": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
