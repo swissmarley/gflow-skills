@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/logo.svg" alt="gflow" width="460">
 
+<img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/banner.svg" alt="gflow-skills - creative production skills for coding agents" width="760">
+
 <h1>gflow-skills</h1>
 
 <p><strong>A collection of agent skills that turn Google Flow into a professional creative production pipeline for coding agents.</strong></p>
