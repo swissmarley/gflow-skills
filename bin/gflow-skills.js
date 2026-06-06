@@ -10,7 +10,7 @@ import { listAgents } from '../lib/agents.js';
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 function printHelp() {
-  console.log(`gflow-skills — creative skills for coding agents
+  console.log(`gflow-skills - creative skills for coding agents
 
 Usage:
   npx gflow-skills install --agent <name> [--mode symlink|copy] [--skills a,b]
