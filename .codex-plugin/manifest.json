@@ -1,0 +1,102 @@
+{
+  "name": "gflow-skills",
+  "version": 1,
+  "skills": [
+    {
+      "name": "character-pipeline",
+      "path": "./skills/character-pipeline",
+      "description": "Create consistent, reusable characters with defined visual identity, personality and voice.",
+      "commands": [
+        "character"
+      ]
+    },
+    {
+      "name": "brand-identity",
+      "path": "./skills/brand-identity",
+      "description": "Establish a complete brand visual system and configure a Flow project for consistent downstream generation.",
+      "commands": [
+        "brand"
+      ]
+    },
+    {
+      "name": "immersive-web",
+      "path": "./skills/immersive-web",
+      "description": "Build cinematic, scroll-driven websites with AI-generated imagery and video loops.",
+      "commands": [
+        "immersive"
+      ]
+    },
+    {
+      "name": "motion-graphics",
+      "path": "./skills/motion-graphics",
+      "description": "Create seamless video loops, animated backgrounds, and title sequences.",
+      "commands": [
+        "motion"
+      ]
+    },
+    {
+      "name": "cinema-production",
+      "path": "./skills/cinema-production",
+      "description": "Full short film pipeline from storyboard to assembled clips.",
+      "commands": [
+        "cinema"
+      ]
+    },
+    {
+      "name": "product-visuals",
+      "path": "./skills/product-visuals",
+      "description": "Studio-quality product photography and commercial imagery.",
+      "commands": [
+        "product"
+      ]
+    },
+    {
+      "name": "design-docs",
+      "path": "./skills/design-docs",
+      "description": "Pitch decks, mood boards, and creative briefs with embedded AI visuals.",
+      "commands": [
+        "designdoc"
+      ]
+    },
+    {
+      "name": "social-content",
+      "path": "./skills/social-content",
+      "description": "Platform-optimized social posts, reels, and thumbnails in batch.",
+      "commands": [
+        "social"
+      ]
+    },
+    {
+      "name": "editorial-design",
+      "path": "./skills/editorial-design",
+      "description": "Article illustrations, cover art, photo essays, and visual narratives.",
+      "commands": [
+        "editorial"
+      ]
+    },
+    {
+      "name": "architectural-viz",
+      "path": "./skills/architectural-viz",
+      "description": "Photorealistic architectural renders, walkthrough videos, and real estate marketing.",
+      "commands": [
+        "archviz"
+      ]
+    },
+    {
+      "name": "game-assets",
+      "path": "./skills/game-assets",
+      "description": "Concept art, environment painting, character design, and cutscene video for games.",
+      "commands": [
+        "gameart"
+      ]
+    },
+    {
+      "name": "music-video",
+      "path": "./skills/music-video",
+      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos.",
+      "commands": [
+        "musicvideo"
+      ]
+    }
+  ]
+}

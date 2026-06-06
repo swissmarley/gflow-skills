@@ -1,0 +1,151 @@
+{
+  "name": "gflow-skills",
+  "owner": "swissmarley",
+  "plugins": [
+    {
+      "name": "character-pipeline",
+      "source": "./skills/character-pipeline",
+      "description": "Create consistent, reusable characters with defined visual identity, personality and voice.",
+      "version": "1.0.0",
+      "category": "foundation",
+      "tags": [
+        "foundation",
+        "character",
+        "identity"
+      ]
+    },
+    {
+      "name": "brand-identity",
+      "source": "./skills/brand-identity",
+      "description": "Establish a complete brand visual system and configure a Flow project for consistent downstream generation.",
+      "version": "1.0.0",
+      "category": "foundation",
+      "tags": [
+        "foundation",
+        "brand",
+        "identity"
+      ]
+    },
+    {
+      "name": "immersive-web",
+      "source": "./skills/immersive-web",
+      "description": "Build cinematic, scroll-driven websites with AI-generated imagery and video loops.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "web",
+        "3d",
+        "scroll",
+        "motion"
+      ]
+    },
+    {
+      "name": "motion-graphics",
+      "source": "./skills/motion-graphics",
+      "description": "Create seamless video loops, animated backgrounds, and title sequences.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "motion",
+        "video",
+        "loops"
+      ]
+    },
+    {
+      "name": "cinema-production",
+      "source": "./skills/cinema-production",
+      "description": "Full short film pipeline from storyboard to assembled clips.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "video",
+        "film",
+        "storyboard"
+      ]
+    },
+    {
+      "name": "product-visuals",
+      "source": "./skills/product-visuals",
+      "description": "Studio-quality product photography and commercial imagery.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "product",
+        "photography",
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "design-docs",
+      "source": "./skills/design-docs",
+      "description": "Pitch decks, mood boards, and creative briefs with embedded AI visuals.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "document",
+        "deck",
+        "moodboard"
+      ]
+    },
+    {
+      "name": "social-content",
+      "source": "./skills/social-content",
+      "description": "Platform-optimized social posts, reels, and thumbnails in batch.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "social",
+        "content",
+        "batch"
+      ]
+    },
+    {
+      "name": "editorial-design",
+      "source": "./skills/editorial-design",
+      "description": "Article illustrations, cover art, photo essays, and visual narratives.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "editorial",
+        "magazine",
+        "illustration"
+      ]
+    },
+    {
+      "name": "architectural-viz",
+      "source": "./skills/architectural-viz",
+      "description": "Photorealistic architectural renders, walkthrough videos, and real estate marketing.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "architecture",
+        "render",
+        "realestate"
+      ]
+    },
+    {
+      "name": "game-assets",
+      "source": "./skills/game-assets",
+      "description": "Concept art, environment painting, character design, and cutscene video for games.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "game",
+        "concept-art",
+        "assets"
+      ]
+    },
+    {
+      "name": "music-video",
+      "source": "./skills/music-video",
+      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos.",
+      "version": "1.0.0",
+      "category": "production",
+      "tags": [
+        "music",
+        "video",
+        "narrative"
+      ]
+    }
+  ]
+}
