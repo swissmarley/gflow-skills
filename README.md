@@ -117,6 +117,10 @@ For agents with their own plugin systems, install via the bundled manifests:
 
 Openclaw is MCP-compatible and uses the Claude or Cursor manifests. See [`guides/providers.md`](guides/providers.md) for the full per-agent path table.
 
+### Upgrading from 1.0
+
+As of 1.1.0, every slash command is namespaced with a `gflow-` prefix (`/character` is now `/gflow-character`, `/brand` is now `/gflow-brand`, and so on). Re-run the installer to pick up the new command files; the old unprefixed commands can be deleted from your agent's commands directory.
+
 ## Quickstart
 
 Establish a brand once, then build a site that inherits it.
@@ -124,7 +128,7 @@ Establish a brand once, then build a site that inherits it.
 1. Run the foundation skill to define the visual system and configure a Flow project:
 
    ```
-   /brand
+   /gflow-brand
    ```
 
    This registers a project, for example `--project acme`.
@@ -132,7 +136,7 @@ Establish a brand once, then build a site that inherits it.
 2. Build an immersive site that inherits the brand, by slash command or natural language ("build me an immersive scroll-driven site for acme"):
 
    ```
-   /immersive --project acme
+   /gflow-immersive --project acme
    ```
 
    Under the hood the immersive-web skill runs gflow-cli with the brand project so every asset matches the palette and mood:
@@ -148,18 +152,18 @@ Establish a brand once, then build a site that inherits it.
 
 | Skill | Type | Command | What it does |
 |-------|------|---------|--------------|
-| character-pipeline | Foundation | `/character` | Create consistent, reusable characters with defined visual identity, personality and voice. |
-| brand-identity | Foundation | `/brand` | Establish a complete brand visual system and configure a Flow project for consistent downstream generation. |
-| immersive-web | Production | `/immersive` | Build cinematic, scroll-driven websites with AI-generated imagery and video loops. |
-| motion-graphics | Production | `/motion` | Create seamless video loops, animated backgrounds, and title sequences. |
-| cinema-production | Production | `/cinema` | Full short film pipeline from storyboard to assembled clips. |
-| product-visuals | Production | `/product` | Studio-quality product photography and commercial imagery. |
-| design-docs | Production | `/designdoc` | Pitch decks, mood boards, and creative briefs with embedded AI visuals. |
-| social-content | Production | `/social` | Platform-optimized social posts, reels, and thumbnails in batch. |
-| editorial-design | Production | `/editorial` | Article illustrations, cover art, photo essays, and visual narratives. |
-| architectural-viz | Production | `/archviz` | Photorealistic architectural renders, walkthrough videos, and real estate marketing. |
-| game-assets | Production | `/gameart` | Concept art, environment painting, character design, and cutscene video for games. |
-| music-video | Production | `/musicvideo` | Visual narratives for music: performance scenes, abstract visuals, lyric videos. |
+| character-pipeline | Foundation | `/gflow-character` | Create consistent, reusable characters with defined visual identity, personality and voice. |
+| brand-identity | Foundation | `/gflow-brand` | Establish a complete brand visual system and configure a Flow project for consistent downstream generation. |
+| immersive-web | Production | `/gflow-immersive` | Build cinematic, scroll-driven websites with AI-generated imagery and video loops. |
+| motion-graphics | Production | `/gflow-motion` | Create seamless video loops, animated backgrounds, and title sequences. |
+| cinema-production | Production | `/gflow-cinema` | Full short film pipeline from storyboard to assembled clips. |
+| product-visuals | Production | `/gflow-product` | Studio-quality product photography and commercial imagery. |
+| design-docs | Production | `/gflow-designdoc` | Pitch decks, mood boards, and creative briefs with embedded AI visuals. |
+| social-content | Production | `/gflow-social` | Platform-optimized social posts, reels, and thumbnails in batch. |
+| editorial-design | Production | `/gflow-editorial` | Article illustrations, cover art, photo essays, and visual narratives. |
+| architectural-viz | Production | `/gflow-archviz` | Photorealistic architectural renders, walkthrough videos, and real estate marketing. |
+| game-assets | Production | `/gflow-gameart` | Concept art, environment painting, character design, and cutscene video for games. |
+| music-video | Production | `/gflow-musicvideo` | Visual narratives for music: performance scenes, abstract visuals, lyric videos. |
 
 Each skill is a self-contained folder under [`skills/`](skills) with a `SKILL.md`, a slash command, and optional reference docs.
 

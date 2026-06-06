@@ -30,13 +30,13 @@ locks in continuity.
 1. Run **brand-identity** to define the visual system and configure a Flow
    project:
    ```
-   /brand
+   /gflow-brand
    ```
    This registers a project, for example `--project acme`.
 2. Run **immersive-web**, passing the brand project so the site inherits the
    palette and mood automatically:
    ```
-   /immersive --project acme
+   /gflow-immersive --project acme
    ```
    Every generated image and video loop on the site now reflects the brand
    identity established in step 1.
@@ -45,13 +45,13 @@ locks in continuity.
 
 1. Run **character-pipeline** to design and register a reusable character:
    ```
-   /character
+   /gflow-character
    ```
    This registers the character, for example `--character nova`.
 2. Run **cinema-production**, reusing the registered character so it stays
    visually consistent across every scene:
    ```
-   /cinema --character nova
+   /gflow-cinema --character nova
    ```
    The film references the same `--character nova` in each scene, giving
    continuity of face, costume, and presence throughout.
