@@ -16,8 +16,10 @@
     "skills/",
     "references/",
     "installers/",
+    "guides/",
     "install.sh",
-    "skills.json"
+    "skills.json",
+    "skills.schema.json"
   ],
   "keywords": ["google-flow", "gflow", "ai", "skills", "claude", "codex", "design", "creative"],
   "author": "swissmarley",

@@ -3,3 +3,4 @@ node_modules/
 *.log
 .superpowers/
 gflow-output/
+docs/

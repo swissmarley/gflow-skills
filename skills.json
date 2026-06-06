@@ -1,5 +1,5 @@
 {
-  "$schema": "./docs/skills.schema.json",
+  "$schema": "./skills.schema.json",
   "version": 1,
   "tool": {
     "name": "gflow-cli",
