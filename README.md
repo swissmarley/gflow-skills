@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/banner.svg" alt="gflow-skills - creative production skills for coding agents" width="760">
+<img src="https://raw.githubusercontent.com/swissmarley/gflow-skills/main/assets/logo.svg" alt="gflow" width="460">
 
 <h1>gflow-skills</h1>
 
