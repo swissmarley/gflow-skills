@@ -19,7 +19,13 @@ Usage:
 Agents: ${listAgents().join(', ')}`);
 }
 
-const opts = parseArgs(process.argv.slice(2));
+let opts;
+try {
+  opts = parseArgs(process.argv.slice(2));
+} catch (err) {
+  console.error('Error: ' + err.message);
+  process.exit(1);
+}
 const registry = loadRegistry();
 
 if (opts.command === 'list') {
