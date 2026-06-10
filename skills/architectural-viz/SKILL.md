@@ -2,7 +2,7 @@
 name: architectural-viz
 description: Produce photorealistic architectural renders, walkthrough videos, before/after transformations, and real estate marketing. Use when the user wants interior or exterior renders, real estate marketing, walkthrough videos, or design presentations.
 type: flexible
-version: 1.0.0
+version: 1.1.0
 foundation: false
 consumes: [brand-identity]
 tools: [gflow-cli]
@@ -24,9 +24,10 @@ Interior and exterior renders, real estate marketing, walkthrough videos, design
 3. **Exterior establishing shots** - `gflow image --model imagen-4 --ratio 16:9`.
 4. **Interior scenes** - generate interiors with a consistent design language.
 5. **Walkthrough video** - `gflow video --model veo-3.1-quality --duration 15`.
-6. **Before/after transformations** - `gflow edit image` on base renders.
-7. **Upscale** - upscale presentation shots with `--upscale 4k`.
-8. **Deliver** - render set plus walkthrough video plus presentation deck assets.
+6. **Extended walkthrough (optional)** - for a longer continuous tour, grow the walkthrough with `gflow extend --media-id <clip>` (ids via `gflow media list`), repeating `--prompt "the camera continues into <next space>"` per room or area (about 7-8s each, 148s cap) and `--add-clip` to append other rendered walkthrough clips; continue later with `--scene <id>` from `gflow scene list`.
+7. **Before/after transformations** - `gflow edit image` on base renders.
+8. **Upscale** - upscale presentation shots with `--upscale 4k`.
+9. **Deliver** - render set plus walkthrough video plus presentation deck assets.
 
 ## Domain Quality Checks
 - Lighting realism: match time-of-day, orientation, and climate to the location.

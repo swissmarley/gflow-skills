@@ -2,7 +2,7 @@
 name: cinema-production
 description: Run a full short-film pipeline from storyboard to assembled clips with AI-generated scenes and consistent characters. Use when the user wants a short film, narrative video, branded story content, or a trailer.
 type: flexible
-version: 1.0.0
+version: 1.1.0
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -27,13 +27,15 @@ Short films, narrative video, branded story content, trailers.
 6. **Character continuity** - pass `--character <name>` (from character-pipeline) so faces, wardrobe, and voice stay consistent across scenes.
 7. **Transitions** - bridge scenes with `gflow video --start-frame <a> --end-frame <b>` so cuts flow rather than jump.
 8. **Batch render** - render the full sequence via `gflow batch <file.yaml>`.
-9. **Deliver** - numbered clips, an assembly/edit guide, and the storyboard document.
+9. **Scene assembly** - chain the clips into one continuous film with `gflow extend`. Find the opening clip's id via `gflow media list`, start the scene with `gflow extend --media-id <id>`, then repeat `--prompt "<what happens next>"` per story beat (each extend adds roughly 7-8 seconds; a scene caps at 148 seconds, about 20 extends) and `--add-clip <media-id or name>` to append already-rendered scene clips in story order. The first run prints a scene id; continue the same timeline in later runs with `--scene <id>` (list existing scenes via `gflow scene list`). When the steps finish, the combined scene video downloads at full quality.
+10. **Deliver** - numbered clips, the combined scene video, an assembly/edit guide, and the storyboard document.
 
 ## Domain Quality Checks
 - Shot variety ratio: mix wide, medium, close-up, and detail shots across each sequence.
 - Color-grade consistency across scenes.
 - Character continuity holds across every scene.
 - Pacing varies by emotional beat, not a uniform rhythm.
+- Extend prompts describe what happens next inside the running shot (continuing motion, light, and subject), never a fresh scene description, so the extension reads as one take.
 - Aspect ratio locked per project (16:9 or 2.35:1).
 
 ## Inheriting characters and brand

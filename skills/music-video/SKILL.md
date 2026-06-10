@@ -2,7 +2,7 @@
 name: music-video
 description: Build visual narratives for music with performance scenes, abstract visuals, story-driven sequences, and lyric imagery, produced as shot-by-shot clips to edit together. Use when the user wants a music video, lyric video, performance visuals, or abstract music visuals.
 type: flexible
-version: 1.0.0
+version: 1.1.0
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -28,7 +28,8 @@ Music videos, lyric videos, performance visuals, abstract music visuals.
 7. **Per-section clips** - `gflow video --duration <matched to section length>`.
 8. **Transitions** - bridge sections with `gflow video --start-frame <a> --end-frame <b>`.
 9. **Batch render** - render the full video via `gflow batch <file.yaml>`.
-10. **Deliver** - numbered clips mapped to timestamps plus an edit guide.
+10. **Assemble the cut** - build one continuous video with `gflow extend`: start from the opening clip (`gflow extend --media-id <id>`, ids via `gflow media list`), chain `--prompt "<what happens next>"` per musical beat (each extend adds roughly 7-8 seconds, scene cap 148 seconds) and append the section clips in song order with `--add-clip <media-id or name>`. Reuse the printed scene id with `--scene <id>` (see `gflow scene list`) to keep extending the same timeline across runs; the combined scene video downloads when done.
+11. **Deliver** - numbered clips mapped to timestamps, the combined scene video, plus an edit guide.
 
 ## Domain Quality Checks
 - Shot pacing mapped to musical structure.
