@@ -1,6 +1,6 @@
 {
   "name": "gflow-skills",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A collection of agent skills for producing professional creative content with Google Flow via gflow-cli.",
   "type": "module",
   "bin": {
