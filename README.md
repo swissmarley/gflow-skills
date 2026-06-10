@@ -143,8 +143,8 @@ Establish a brand once, then build a site that inherits it.
    Under the hood the immersive-web skill runs gflow-cli with the brand project so every asset matches the palette and mood:
 
    ```bash
-   gflow image --model imagen-4 --ratio 16:9 --outputs 4 --upscale 4k --project acme --out ./public/hero
-   gflow video --model veo-3.1-quality --duration 8 --ratio 16:9 --project acme --out ./public/video
+   gflow image --model imagen-4 --ratio 16:9 --outputs 4 --upscale 4k --project acme --no-headed --out ./public/hero
+   gflow video --model veo-3.1-quality --duration 8 --ratio 16:9 --project acme --no-headed --out ./public/video
    ```
 
    The skill then assembles production Next.js + Tailwind + Motion/GSAP code around the generated hero imagery and video loops.
@@ -176,6 +176,7 @@ Every skill applies a shared quality gate before it delivers output, defined in 
 - **Accessibility (WCAG AA):** 4.5:1 text contrast, 44x44pt touch targets, visible focus rings, no color-only indicators.
 - **Motivated motion:** spring physics by default, `prefers-reduced-motion` respected, transform and opacity only, no raw scroll listeners.
 - **Typographic discipline:** display typefaces for headings, constrained body measure, one focal point per composition.
+- **CLI discipline:** all assets of a run stay in one shared Flow project (`--project <name>`), gflow runs headless (`--no-headed`), and Turbopack is banned from any web output.
 
 The gate draws on established production design-skill practice and is enforced by the test suite.
 

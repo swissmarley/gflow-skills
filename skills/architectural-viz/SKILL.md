@@ -2,7 +2,7 @@
 name: architectural-viz
 description: Produce photorealistic architectural renders, walkthrough videos, before/after transformations, and real estate marketing. Use when the user wants interior or exterior renders, real estate marketing, walkthrough videos, or design presentations.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Interior and exterior renders, real estate marketing, walkthrough videos, design
 ## Workflow
 
 1. **Project brief** - capture building type, style (modern, classical, organic), location, and time of day.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Exterior establishing shots** - `gflow image --model imagen-4 --ratio 16:9`.
 4. **Interior scenes** - generate interiors with a consistent design language.
 5. **Walkthrough video** - `gflow video --model veo-3.1-quality --duration 15`.

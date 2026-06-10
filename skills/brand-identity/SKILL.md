@@ -2,7 +2,7 @@
 name: brand-identity
 description: Establish a complete brand visual system (colors, typography, imagery style, tone) and configure a Google Flow project so all downstream generation inherits the brand DNA. Use when the user wants brand guidelines, a visual identity, or a consistent look across all their creative output. Foundation skill consumed by every production skill via --project.
 type: flexible
-version: 1.0.0
+version: 1.0.1
 foundation: true
 tools: [gflow-cli]
 ---
@@ -19,7 +19,7 @@ Setting up a brand's visual language before producing any campaign, site, or con
 ## Workflow
 
 1. **Gather the brief** - industry, values, target audience, mood/adjectives, competitor references, any existing assets. One question at a time if thin.
-2. **Verify tooling** - `gflow doctor`; if it fails, have the user run `gflow auth login`.
+2. **Verify tooling** - `gflow doctor`; if it fails, have the user run `gflow auth login`. Run every other gflow command with `--project <brand>` and `--no-headed` so all brand assets land in the one brand project.
 3. **Mood exploration** - generate distinct visual directions:
    `gflow image --id brand-mood --prompt "<mood board concept>" --model imagen-4 --outputs 4 --out ./brand/<name>`
    Produce 3-4 genuinely different directions (not variations of one).

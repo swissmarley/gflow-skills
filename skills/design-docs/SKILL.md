@@ -2,7 +2,7 @@
 name: design-docs
 description: Build pitch decks, mood boards, and creative briefs with embedded AI visuals, output as HTML, PDF-ready, or Markdown with assets. Use when the user needs a pitch deck, mood board, creative brief, or style guide.
 type: flexible
-version: 1.0.0
+version: 1.0.1
 foundation: false
 consumes: [brand-identity]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Pitch decks, mood boards, creative briefs, style guides.
 ## Workflow
 
 1. **Doc brief** - capture type (deck, moodboard, or brief), audience, and brand context.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Generate section illustrations** - `gflow image` per section (use `--project <brand>` if a brand exists).
 4. **Build the document** - clear typographic hierarchy on a 12-column grid with generous py-24+ spacing between sections.
 5. **Apply the brand system** - if a brand-identity run exists, apply its colors, fonts, and logo placement.

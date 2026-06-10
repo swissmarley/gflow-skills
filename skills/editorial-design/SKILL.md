@@ -2,7 +2,7 @@
 name: editorial-design
 description: Create article illustrations, cover art, photo essays, and visual narratives with art-directed AI photography. Use when the user wants magazine layouts, article illustration, cover art, photo essays, or editorial features.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Magazine layouts, article illustration, cover art, photo essays, editorial featu
 ## Workflow
 
 1. **Editorial brief** - capture article topic, tone, publication style, and visual references.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Shot list** - define hero, supporting, detail, and atmosphere shots.
 4. **Art direction** - set lighting, angle, color treatment, and concept per shot.
 5. **Generate** - `gflow image --model imagen-4 --outputs 4` per shot.
