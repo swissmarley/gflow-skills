@@ -2,7 +2,7 @@
 name: social-content
 description: Generate platform-optimized social posts, reels, and thumbnails in batch with a consistent aesthetic. Use when the user wants Instagram posts or reels, TikTok covers, YouTube thumbnails, LinkedIn banners, or a content campaign.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Instagram posts and reels, TikTok covers, YouTube thumbnails, LinkedIn banners, 
 ## Workflow
 
 1. **Content brief** - capture platform, content pillar, campaign theme, and brand voice.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Define the content batch** - plan the asset set (e.g. 5 posts, 3 stories, 2 reels covers).
 4. **Generate the batch** - `gflow batch <file.yaml>` with platform-specific ratios per asset.
 5. **Short-form video** - `gflow video --duration 5` for reels and TikTok covers.

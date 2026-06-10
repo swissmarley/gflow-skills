@@ -2,7 +2,7 @@
 name: music-video
 description: Build visual narratives for music with performance scenes, abstract visuals, story-driven sequences, and lyric imagery, produced as shot-by-shot clips to edit together. Use when the user wants a music video, lyric video, performance visuals, or abstract music visuals.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Music videos, lyric videos, performance visuals, abstract music visuals.
 ## Workflow
 
 1. **Music brief** - capture genre, tempo and BPM, mood arc, lyric themes, and visual references.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Structure breakdown** - map song sections (verse, chorus, bridge) to visual treatments.
 4. **Performer character** - `gflow character create` if the video is narrative.
 5. **Key-frame stills** - `gflow image` per section.

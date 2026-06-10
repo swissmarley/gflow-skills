@@ -2,7 +2,7 @@
 name: character-pipeline
 description: Create consistent, reusable characters with defined visual identity, personality and voice using Google Flow. Use when the user wants to design a character, mascot, or recurring persona that should appear consistently across images and videos. Foundation skill, its characters are consumed by cinema-production, music-video, game-assets, social-content, and immersive-web.
 type: flexible
-version: 1.0.0
+version: 1.0.1
 foundation: true
 tools: [gflow-cli]
 ---
@@ -19,7 +19,7 @@ Creating a mascot, protagonist, recurring host, or any persona that must look th
 ## Workflow
 
 1. **Gather the brief** - ask for: name, role/archetype, key visual traits, personality, intended use, and a voice direction. Ask one question at a time if the brief is thin.
-2. **Verify tooling** - run `gflow doctor`. If it fails, stop and have the user run `gflow auth login`.
+2. **Verify tooling** - run `gflow doctor`. If it fails, stop and have the user run `gflow auth login`. Run every other gflow command in this run with the same `--project <name>` and `--no-headed` so all character assets land in one Flow project.
 3. **Concept exploration** - generate 4-8 concept variations:
    `gflow image --id char-concept --prompt "<detailed character description>" --model nano-banana-pro --outputs 6 --out ./characters/<name>`
 4. **Select direction** - present the variations, let the user pick the strongest. Iterate if needed.

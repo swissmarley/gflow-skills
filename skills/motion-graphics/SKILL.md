@@ -2,7 +2,7 @@
 name: motion-graphics
 description: Create seamless video loops, animated backgrounds, and title sequences using frame interpolation and Veo. Use when the user needs ambient backgrounds, transitions, title sequences, or web hero loops.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Ambient backgrounds, scene transitions, title sequences, web hero loops.
 ## Workflow
 
 1. **Define motion purpose** - classify the loop as ambient, transition, emphasis, or narrative. Every loop must have an articulable purpose.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Generate start frame** - `gflow image --model imagen-4 --ratio 16:9 --out ./motion/start.png` (use `--project <brand>` if a brand exists).
 4. **Generate end frame** - produce a subtle variation of the start frame so the motion reads as gentle drift, not a cut.
 5. **Interpolate** - `gflow video --start-frame ./motion/start.png --end-frame ./motion/end.png --duration 4 --model veo-3.1-quality --ratio 16:9 --out ./motion/loop.mp4`.

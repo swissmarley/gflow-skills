@@ -6,7 +6,7 @@
       "name": "character-pipeline",
       "source": "./skills/character-pipeline",
       "description": "Create consistent, reusable characters with defined visual identity, personality and voice.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "foundation",
       "tags": [
         "foundation",
@@ -18,7 +18,7 @@
       "name": "brand-identity",
       "source": "./skills/brand-identity",
       "description": "Establish a complete brand visual system and configure a Flow project for consistent downstream generation.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "foundation",
       "tags": [
         "foundation",
@@ -30,7 +30,7 @@
       "name": "immersive-web",
       "source": "./skills/immersive-web",
       "description": "Build cinematic, scroll-driven websites with AI-generated imagery and video loops.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "web",
@@ -43,7 +43,7 @@
       "name": "motion-graphics",
       "source": "./skills/motion-graphics",
       "description": "Create seamless video loops, animated backgrounds, and title sequences.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "motion",
@@ -55,7 +55,7 @@
       "name": "cinema-production",
       "source": "./skills/cinema-production",
       "description": "Full short film pipeline from storyboard to assembled clips and one extended scene video.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "video",
@@ -67,7 +67,7 @@
       "name": "product-visuals",
       "source": "./skills/product-visuals",
       "description": "Studio-quality product photography and commercial imagery.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "production",
       "tags": [
         "product",
@@ -79,7 +79,7 @@
       "name": "design-docs",
       "source": "./skills/design-docs",
       "description": "Pitch decks, mood boards, and creative briefs with embedded AI visuals.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "production",
       "tags": [
         "document",
@@ -91,7 +91,7 @@
       "name": "social-content",
       "source": "./skills/social-content",
       "description": "Platform-optimized social posts, reels, and thumbnails in batch.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "social",
@@ -103,7 +103,7 @@
       "name": "editorial-design",
       "source": "./skills/editorial-design",
       "description": "Article illustrations, cover art, photo essays, and visual narratives.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "editorial",
@@ -115,7 +115,7 @@
       "name": "architectural-viz",
       "source": "./skills/architectural-viz",
       "description": "Photorealistic architectural renders, walkthrough videos, and real estate marketing.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "architecture",
@@ -127,7 +127,7 @@
       "name": "game-assets",
       "source": "./skills/game-assets",
       "description": "Concept art, environment painting, character design, and cutscene video for games.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "game",
@@ -139,7 +139,7 @@
       "name": "music-video",
       "source": "./skills/music-video",
       "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos, assembled into one continuous cut.",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "category": "production",
       "tags": [
         "music",

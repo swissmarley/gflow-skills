@@ -2,7 +2,7 @@
 name: game-assets
 description: Create concept art, environment painting, character design, cutscene video, UI mockups, and marketing key art for games. Use when the user wants game concept art, environment design, character design, cutscenes, key art, or game UI mockups.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Game concept art, environment design, character design, cutscenes, key art, game
 ## Workflow
 
 1. **Game brief** - capture genre, art style, platform, and reference games or films.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Concept exploration** - `gflow image --outputs 8` for wide exploration.
 4. **Lock art direction** - lock the direction from user selects.
 5. **Environment paintings** - render key locations at different times and weather.

@@ -46,6 +46,10 @@ Every gflow-skills skill MUST satisfy these standards before delivering output. 
 - No fake-perfect numbers ("99.99%").
 - Run a content audit before delivery: remove hallucinated claims and "trying to sound thoughtful" phrasing.
 
+## Web Stack (skills that emit code)
+
+- **Turbopack is prohibited.** Run `next dev` and `next build` without the `--turbopack` flag, and strip `--turbopack` from package.json scripts when a scaffold (create-next-app adds it by default) puts it there. Use the standard Next.js webpack toolchain.
+
 ## gflow-cli Prerequisites
 
 Every skill assumes:
@@ -54,3 +58,8 @@ Every skill assumes:
 - Verified readiness: `gflow doctor`
 
 If `gflow doctor` fails, stop and instruct the user to authenticate before generating.
+
+## gflow-cli Execution Rules
+
+- **One project per run.** Pick a single Flow project at the start of the run (reuse the brand's `--project <brand>` when one exists, otherwise one named project for this run) and pass the same `--project <name>` on every gflow command. Never run generation commands without `--project`: each command then lands its asset in its own auto-created project and the user ends up with a pile of single-asset projects. Split assets across projects only when the user explicitly asks for it.
+- **Headless execution.** Append `--no-headed` to every gflow command. The only exception is `gflow auth login`, which must open a visible window for Google sign-in.

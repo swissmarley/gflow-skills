@@ -2,7 +2,7 @@
 name: cinema-production
 description: Run a full short-film pipeline from storyboard to assembled clips with AI-generated scenes and consistent characters. Use when the user wants a short film, narrative video, branded story content, or a trailer.
 type: flexible
-version: 1.1.0
+version: 1.1.1
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -20,7 +20,7 @@ Short films, narrative video, branded story content, trailers.
 ## Workflow
 
 1. **Script breakdown** - decompose the script into scenes, characters, locations, and mood per beat.
-2. **Verify session** - run `gflow doctor`.
+2. **Verify session** - run `gflow doctor`. Pick one Flow project for the whole run and pass the same `--project <name>` plus `--no-headed` on every gflow command (reuse `--project <brand>` if a brand exists); split assets across projects only if the user explicitly asks.
 3. **Storyboard key frames** - `gflow image --model imagen-4 --ratio 16:9` for one or more key frames per scene.
 4. **Approval gate** - present the storyboard; the user approves or requests revisions before any video renders.
 5. **Per-scene video** - `gflow video --model veo-3.1-quality --duration 8 --ratio 16:9` for each approved scene.
