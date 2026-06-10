@@ -26,6 +26,7 @@ npx gflow-skills install --agent claude
 - 🎭 **Foundation skills** - establish reusable characters and a full brand system once, reuse them everywhere.
 - 🌐 **Immersive websites** - cinematic, scroll-driven sites with AI hero imagery and video backgrounds.
 - 🎬 **Cinema production** - storyboard to assembled clips, with character continuity across scenes.
+- 🎬➕ **Scene extend** - every video skill can grow clips into longer scenes with `gflow extend`: chain "what happens next" prompts (roughly 7-8s each, up to 148s) and append project clips into one continuous video.
 - ✨ **Motion graphics** - seamless loops, animated backgrounds, and title sequences via frame interpolation.
 - 📸 **Product and editorial** - studio-quality commercial imagery and art-directed editorial photography.
 - 🏛️ **Architecture and games** - photorealistic renders, walkthroughs, concept art, and key art.
@@ -62,7 +63,7 @@ See [`guides/pipeline-guide.md`](guides/pipeline-guide.md) for worked examples.
 ## Requirements
 
 - Node.js 20 or newer.
-- [gflow-cli](https://github.com/swissmarley/gflow-cli), installed globally:
+- [gflow-cli](https://github.com/swissmarley/gflow-cli) 1.1.0 or newer (scene extend needs `gflow extend` and `gflow scene list`), installed globally:
   ```bash
   npm install -g @swissmarley/gflow-cli
   ```
@@ -156,14 +157,14 @@ Establish a brand once, then build a site that inherits it.
 | brand-identity | Foundation | `/gflow-brand` | Establish a complete brand visual system and configure a Flow project for consistent downstream generation. |
 | immersive-web | Production | `/gflow-immersive` | Build cinematic, scroll-driven websites with AI-generated imagery and video loops. |
 | motion-graphics | Production | `/gflow-motion` | Create seamless video loops, animated backgrounds, and title sequences. |
-| cinema-production | Production | `/gflow-cinema` | Full short film pipeline from storyboard to assembled clips. |
+| cinema-production | Production | `/gflow-cinema` | Full short film pipeline from storyboard to assembled clips and one extended scene video. |
 | product-visuals | Production | `/gflow-product` | Studio-quality product photography and commercial imagery. |
 | design-docs | Production | `/gflow-designdoc` | Pitch decks, mood boards, and creative briefs with embedded AI visuals. |
 | social-content | Production | `/gflow-social` | Platform-optimized social posts, reels, and thumbnails in batch. |
 | editorial-design | Production | `/gflow-editorial` | Article illustrations, cover art, photo essays, and visual narratives. |
 | architectural-viz | Production | `/gflow-archviz` | Photorealistic architectural renders, walkthrough videos, and real estate marketing. |
 | game-assets | Production | `/gflow-gameart` | Concept art, environment painting, character design, and cutscene video for games. |
-| music-video | Production | `/gflow-musicvideo` | Visual narratives for music: performance scenes, abstract visuals, lyric videos. |
+| music-video | Production | `/gflow-musicvideo` | Visual narratives for music: performance scenes, abstract visuals, lyric videos, assembled into one continuous cut. |
 
 Each skill is a self-contained folder under [`skills/`](skills) with a `SKILL.md`, a slash command, and optional reference docs.
 

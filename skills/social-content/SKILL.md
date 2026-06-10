@@ -2,7 +2,7 @@
 name: social-content
 description: Generate platform-optimized social posts, reels, and thumbnails in batch with a consistent aesthetic. Use when the user wants Instagram posts or reels, TikTok covers, YouTube thumbnails, LinkedIn banners, or a content campaign.
 type: flexible
-version: 1.0.0
+version: 1.1.0
 foundation: false
 consumes: [brand-identity, character-pipeline]
 tools: [gflow-cli]
@@ -24,8 +24,9 @@ Instagram posts and reels, TikTok covers, YouTube thumbnails, LinkedIn banners, 
 3. **Define the content batch** - plan the asset set (e.g. 5 posts, 3 stories, 2 reels covers).
 4. **Generate the batch** - `gflow batch <file.yaml>` with platform-specific ratios per asset.
 5. **Short-form video** - `gflow video --duration 5` for reels and TikTok covers.
-6. **Brand consistency** - apply `--project <brand>` across the batch and use `gflow agent` to lock voice and treatment.
-7. **Deliver** - organize output by platform folder plus a posting guide.
+6. **Longer reels (optional)** - when a reel needs more than one generation, extend it with `gflow extend --media-id <clip>` plus repeated `--prompt "<what happens next>"` (about 7-8s per extend) or `--add-clip` to stitch clips into one video; keep the result inside the platform's length limit.
+7. **Brand consistency** - apply `--project <brand>` across the batch and use `gflow agent` to lock voice and treatment.
+8. **Deliver** - organize output by platform folder plus a posting guide.
 
 ## Domain Quality Checks
 - Platform-native ratios: 4:5 feed, 9:16 stories and reels, 16:9 YouTube.

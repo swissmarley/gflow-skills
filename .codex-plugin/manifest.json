@@ -37,7 +37,7 @@
     {
       "name": "cinema-production",
       "path": "./skills/cinema-production",
-      "description": "Full short film pipeline from storyboard to assembled clips.",
+      "description": "Full short film pipeline from storyboard to assembled clips and one extended scene video.",
       "commands": [
         "gflow-cinema"
       ]
@@ -93,7 +93,7 @@
     {
       "name": "music-video",
       "path": "./skills/music-video",
-      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos.",
+      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos, assembled into one continuous cut.",
       "commands": [
         "gflow-musicvideo"
       ]

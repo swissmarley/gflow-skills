@@ -2,7 +2,7 @@
 name: editorial-design
 description: Create article illustrations, cover art, photo essays, and visual narratives with art-directed AI photography. Use when the user wants magazine layouts, article illustration, cover art, photo essays, or editorial features.
 type: flexible
-version: 1.0.0
+version: 1.1.0
 foundation: false
 consumes: [brand-identity]
 tools: [gflow-cli]
@@ -26,7 +26,8 @@ Magazine layouts, article illustration, cover art, photo essays, editorial featu
 5. **Generate** - `gflow image --model imagen-4 --outputs 4` per shot.
 6. **Curate and upscale** - select the best frames and upscale heroes with `--upscale 4k`.
 7. **Motion pieces** - generate `gflow video` clips for digital editorial.
-8. **Deliver** - image set plus art-direction notes and layout suggestions.
+8. **Longer motion pieces (optional)** - if a digital feature calls for a longer sequence, extend a clip with `gflow extend --media-id <clip>` plus repeated `--prompt "<what happens next>"` (about 7-8s per extend) or `--add-clip` to combine rendered clips into one piece.
+9. **Deliver** - image set plus art-direction notes and layout suggestions.
 
 ## Domain Quality Checks
 - Every image has a concept and intent, not decoration.

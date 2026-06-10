@@ -33,7 +33,7 @@
     },
     {
       "name": "immersive-web",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity", "character-pipeline"],
       "description": "Build cinematic, scroll-driven websites with AI-generated imagery and video loops.",
@@ -47,7 +47,7 @@
     },
     {
       "name": "motion-graphics",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity"],
       "description": "Create seamless video loops, animated backgrounds, and title sequences.",
@@ -60,10 +60,10 @@
     },
     {
       "name": "cinema-production",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity", "character-pipeline"],
-      "description": "Full short film pipeline from storyboard to assembled clips.",
+      "description": "Full short film pipeline from storyboard to assembled clips and one extended scene video.",
       "tags": ["video", "film", "storyboard"],
       "commands": [{ "file": "commands/gflow-cinema.md", "slash": "gflow-cinema" }],
       "triggers": [
@@ -100,7 +100,7 @@
     },
     {
       "name": "social-content",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity", "character-pipeline"],
       "description": "Platform-optimized social posts, reels, and thumbnails in batch.",
@@ -113,7 +113,7 @@
     },
     {
       "name": "editorial-design",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity"],
       "description": "Article illustrations, cover art, photo essays, and visual narratives.",
@@ -126,7 +126,7 @@
     },
     {
       "name": "architectural-viz",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity"],
       "description": "Photorealistic architectural renders, walkthrough videos, and real estate marketing.",
@@ -139,7 +139,7 @@
     },
     {
       "name": "game-assets",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity", "character-pipeline"],
       "description": "Concept art, environment painting, character design, and cutscene video for games.",
@@ -152,10 +152,10 @@
     },
     {
       "name": "music-video",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "foundation": false,
       "consumes": ["brand-identity", "character-pipeline"],
-      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos.",
+      "description": "Visual narratives for music: performance scenes, abstract visuals, lyric videos, assembled into one continuous cut.",
       "tags": ["music", "video", "narrative"],
       "commands": [{ "file": "commands/gflow-musicvideo.md", "slash": "gflow-musicvideo" }],
       "triggers": [
